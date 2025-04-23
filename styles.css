@@ -1,0 +1,823 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+.hero-section {
+  background-image: url('img/bg.svg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0px;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* About Section */
+.about-section {
+    background-image: url('img/about-bg.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Sensei Section */
+.sensei-section {
+    background-image: url('img/sensei.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Servicees Section */
+.services-section1 {
+    background-image: url('img/services.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.services-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #ccc;
+    padding-top: 90px;
+}
+
+.service-title span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    line-height: 1.2;
+}
+
+.service-description {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* adds subtle shadow */
+}
+
+.nav-links1 {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: 550px; /* This pushes it to the right */
+}
+
+    .nav-links1 a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+        font-size: 20px;
+    }
+
+        .nav-links1 a:hover {
+            color: #ffa500;
+        }
+
+.cta-button1 {
+    background: transparent;
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+    .cta-button1:hover {
+        background: #000;
+        color: #fff;
+    }
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background: transparent;
+    transition: background 0.3s, box-shadow 0.3s;
+    z-index: 999;
+}
+
+    .navbar.scrolled {
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .navbar.scrolled .nav-links a {
+            color: #000;
+        }
+
+            .navbar.scrolled .nav-links a:hover {
+                color: #ffa500;
+            }
+
+        .navbar.scrolled .cta-button {
+            border-color: #000;
+            color: #000;
+        }
+
+            .navbar.scrolled .cta-button:hover {
+                background: #000;
+                color: #fff;
+            }
+
+
+
+.logo {
+  width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: 550px; /* This pushes it to the right */
+}
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+        font-size: 20px;
+    }
+
+.nav-links a:hover {
+  color: #ffa500;
+}
+
+.cta-button {
+    background: transparent;
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.cta-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.hero-content {
+  margin-top: 170px;
+  max-width: 100%;
+  margin-left: 100px;
+}
+
+.sensei-content {
+    margin-top: 200px;
+    max-width: 100%;
+    margin-left: 120px;
+}
+
+.about-content {
+    margin-top: 190px;
+    max-width: 100%;
+    margin-left: 120px;
+}
+
+.about-content p {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.about-content h1 {
+    font-size: 70px;
+    font-style: italic;
+
+}
+
+.services-content {
+    margin-top: 150px;
+    max-width: 800px;
+    margin-left: 120px;
+}
+
+    .services-content h1 {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .services-content p {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    .services-content h2 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+.tagline {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 45px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.read-more-btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.read-more-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+/* Sensei expect Section */
+.sensei-expect-section {
+    background: #fff;
+    color: #000;
+    padding: 60px 40px;
+    text-align: left;
+    min-height: 1200px; 
+}
+
+    .sensei-expect-section h1 {
+        margin-top: 80px;
+        font-size: 42px;
+        margin-bottom: 25px;
+        margin-left: 100px;
+        text-decoration: underline;
+    }
+
+    .sensei-expect-section p {
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-left: 100px;
+        margin-right: 300px;
+    }
+
+.sensei-content h1 {
+    margin-top: 30px;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.sensei-content p {
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    max-width: 65%;
+}
+
+
+
+
+/* What to Expect Section */
+    .expect-section {
+    background: #fff;
+    color: #000;
+    padding: 60px 40px;
+    text-align: left;
+    min-height: 1100px; 
+}
+
+    .expect-section h3 {
+        margin-top: 80px;
+        font-size: 42px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+
+    .expect-section p {
+        font-size: 32px;
+        margin-bottom: 30px;
+        margin-left: 100px;
+    }
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 80px;
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.card {
+  min-width: 300px;
+  flex-shrink: 0;
+  background: #f4f4f4;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+
+.svg-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 80px;
+    margin-left: 100px;
+}
+
+.svg {
+    min-width: 300px;
+    flex-shrink: 0;
+    background: #f4f4f4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+    .svg img {
+        width: 100%;
+        display: block;
+    }
+
+    .svg:hover {
+    transform: scale(1.1);
+    }
+
+
+
+.learn-more-button {
+    background: transparent;
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    margin-bottom: 210px; 
+    text-decoration: none; 
+}
+
+    .learn-more-button:hover {
+        background: #000;
+        color: #fff;
+    }
+
+/* Services Section */
+.services-section {
+    background: #fff;
+    color: #000;
+    text-align: left;
+    min-height: 800px; 
+
+}
+
+.services-bg {
+    background-image: url('img/about-bg.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0px;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+/* About Section */
+.about-company-section {
+    background: #fff;
+    color: #000;
+    padding: 60px 40px;
+    text-align: left;
+    min-height: 2500px; 
+
+}
+
+    .about-company-section h1 {
+        padding: 60px 270px;
+        font-weight: normal;
+        font-size: 32px;
+    }
+
+.founder-image {
+    margin-top: 150px;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: -40px;
+    margin-bottom: 60px;
+}
+
+.footer {
+    padding-top: 150px;
+    padding: 100px 30px;
+    background-color: #000;
+    text-align: center;
+    min-height: 250px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    padding: 20px;
+}
+
+.custom-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+    .custom-button:hover {
+        background-color: #fff;
+        color: black;
+        border: 1px solid black; 
+    }
+
+.about-company-section h2 {
+    padding: 60px 80px;
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: -35px;
+}
+
+.about-company-section p {
+    padding: 0px 80px;
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 35px;
+}
+
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.connect h3,
+.register h3 {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.connect-about {
+    margin-top: 100px;
+    float: right;
+    margin-right: 50px;
+    text-align: right;
+}
+
+.connect-about h3 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.connect-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.register a {
+    color: #fff;
+}
+
+.register p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+/* Popup Background */
+.form-popup {
+    display: none;
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered Form Container */
+.form-container {
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 8px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box; 
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Logo */
+.form-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Title */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Inputs */
+input, textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+textarea {
+    resize: vertical;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+    .checkbox-group label {
+        display: flex;
+        align-items: center; 
+        gap: 10px; 
+        font-size: 14px;
+        color: #333;
+        line-height: 1.4;
+        word-break: normal; 
+        max-width: 100%; 
+        margin-left: 0; 
+        padding: 5px 0; 
+    }
+
+    .checkbox-group input[type="checkbox"] {
+        margin: 0; 
+        margin-right: 5px; 
+        flex-shrink: 0; 
+        transform: scale(1); 
+        width: auto; 
+        height: auto; 
+    }
+
+
+
+/* Consent Label */
+.consent {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 0.9em;
+    gap: 15px; 
+}
+
+    .consent input[type="checkbox"] {
+        margin: 0; 
+        flex-shrink: 0; 
+        transform: scale(1); 
+        width: auto;
+        height: auto;
+    }
+
+/* Submit Button */
+.submit-btn {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.person-content {
+    background: #fff;
+    color: #000;
+    padding: 60px 40px;
+    text-align: left;
+    min-height: 500px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.profile-image img {
+    margin-top: 50px;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-right: 40px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+    .profile-info h1 {
+        margin-top: 0;
+        font-size: 28px;
+        color: #222;
+    }
+
+    .profile-info h2 {
+        font-size: 18px;
+        color: #777;
+        margin-bottom: 20px;
+    }
+
+    .profile-info p {
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+
+.back-arrow {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 768px) {
+
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 60px;
+    }
+
+    .connect, .register {
+        max-width: 45%;
+    }
+
+        .register p {
+            margin: 0;
+        }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 60px;
+    }
+}

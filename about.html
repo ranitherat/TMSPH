@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Marketing Sensei PH</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script src="script.js"></script>
+
+
+    <!-- Header and Nav -->
+    <header class="about-section">
+        <nav class="navbar" id="navbar">
+            <img src="img/logo.png" alt="Marketing Sensei Logo" class="logo" />
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sensei.html">Our Sensei</a></li>
+            </ul>
+            <button class="cta-button" onclick="openForm()">
+                <div class="marquee-wrapper">
+                    LET'S TALK
+                </div>
+            </button>
+
+            <!-- Popup Form -->
+            <div id="popupForm" class="form-popup" hidden>
+                <div class="form-container">
+                    <button class="close-btn" onclick="closeForm()">×</button>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <img src="img/logo.png" alt="Logo" class="form-logo">
+                        <h2>Please fill out the form below and we will get back to you</h2>
+
+                        <input type="hidden" name="access_key" value="ACCESSKEY">
+
+                        <input type="text" name="Full Name" placeholder="Full Name" required>
+                        <input type="text" name="Organization Name" placeholder="Organization Name (N/A if none)" required>
+
+                        <p>What industry does your business belong to? <br> (Select one or more that apply):</p>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="industry" value="E-Commerce">
+                                E-Commerce
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Real Estate">
+                                Real Estate
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Financial Services">
+                                Financial Services
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Health and Wellness">
+                                Health and Wellness
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Professional Services">
+                                Professional Services (Consulting, Marketing, etc.)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Technology and Software">
+                                Technology and Software
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Hospitality and Tourism">
+                                Hospitality and Tourism
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Food and Beverage">
+                                Food and Beverage
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Education and E-learning">
+                                Education and E-learning
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Non-profit and NGO">
+                                Non-profit and NGO
+                            </label>
+                            <label>
+                                <input type="checkbox" name="industry" value="Others (please specify)">
+                                Others (please specify)
+                            </label>
+                        </div>
+
+                        <input type="text" name="Other" placeholder="Others (please specify)">
+                        <input type="email" name="Email" placeholder="Email Address" required>
+                        <input type="text" name="Contact Number" placeholder="Contact Number" required>
+                        <input type="text" name="Best Day to Call" placeholder="Best Day to Call" required>
+                        <input type="text" name="Best Time to Call" placeholder="Best Time to Call" required>
+                        <textarea name="Specific Needs" placeholder="Specific Needs to Address (N/A if none)"></textarea>
+
+                        <label class="consent">
+                            <input type="checkbox" name="consent" value="1" required>
+                            By submitting this form, I consent to the collection and use of my information in accordance with the Data Privacy Act of 2012.
+                        </label>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="about-content">
+            <h1>Who We Are</h1>
+            <p>Shaping Future-Ready Marketers Through Real-World <br> Learning And Expert Mentorship</p>
+        </div>
+
+        <div class="connect-about">
+            <h3>SHARE THIS PAGE</h3>
+            <div class="connect-icons">
+
+                <!-- Facebook Share -->
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://themarketingsenseiph.com/"
+                   target="_blank" aria-label="Share on Facebook">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+
+                <!-- Twitter (now X) Share -->
+                <a href="https://twitter.com/intent/tweet?url=https://themarketingsenseiph.com/&text=Check%20this%20out!"
+                   target="_blank" aria-label="Share on X (Twitter)">
+                    <img src="img/x.png" alt="X (Twitter)">
+                </a>
+
+                <!-- LinkedIn Share -->
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://themarketingsenseiph.com/"
+                   target="_blank" aria-label="Share on LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-company-section" id="expect">
+        <h1>The Marketing Sensei PH is where future-ready marketers are made. Founded in 2008, we’ve built a name in marketing education and consultancy by turning complex strategies into real, actionable growth. Our goal? To empower students, entrepreneurs, and professionals with the tools, mindset, and mentorship to thrive in the fast-evolving world of marketing. From interactive workshops to engaging keynote talks, we create experiences that go beyond theory — grounded in values, built for results.</h1>
+
+        <div class="button-container">
+            <a href="sensei.html" class="custom-button">MEET OUR SENSEI →</a>
+        </div>
+
+        <h2>OUR MISSION</h2>
+        <p>The Marketing Sensei PH is dedicated to empowering individuals and businesses through innovative and advanced marketing strategies. By delivering top-tier education and consultancy services, the brand aims to cultivate marketing excellence, guiding professionals and enterprises toward success in an ever-evolving business landscape.</p>
+
+        <h2>OUR VISION</h2>
+        <p>To be the premier marketing consultancy and training service in the Philippines and the Asia Pacific region, driving innovation, sustainability, and growth for individuals, businesses, and communities. Through education, mentorship, and cutting-edge strategies, The Marketing Sensei PH envisions a future where every entrepreneur and professional is equipped to thrive in the global market.</p>
+
+        <img src="img/Founder.svg" alt="Founder" class="founder-image">
+
+        <div class="button-container">
+            <a href="founder.html" class="custom-button">MEET THE FOUNDER →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="connect">
+                <h3>
+                    FOLLOW US FOR SOMETHING NEW
+                </h3>
+                <div class="icons">
+                    <a href="https://www.facebook.com/themarketingsenseiph" aria-label="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/themarketingsenseiph?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/jerry-cocabo-yao-cpm-asia-cpme-mba-0a741535/" aria-label="LinkedIn"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.tiktok.com/@themarketingsenseiph?is_from_webapp=1&sender_device=pc" aria-label="TikTok"><img src="img/tiktok.png" alt="TikTok"></a>
+                </div>
+            </div>
+            <div class="register">
+                <a><h3>CONTACT US</h3></a>
+                <p>themarketingsenseiph@gmail.com</p>
+                <p>+63 918 917 1483</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>© 2025 The Marketing Sensei PH. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.termsfeed.com/live/47eb126b-5488-48e6-8729-e03eaa2310d8">Privacy Policy</a> |
+                <a href="https://www.termsfeed.com/live/272b6c4c-fd2a-4ce7-a7e4-ac220320f242">Terms Of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
