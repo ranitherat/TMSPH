@@ -4,7 +4,6 @@ window.addEventListener("scroll", function () {
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 
-
 // Function to open the popup
 function openForm() {
     const popup = document.getElementById('popupForm');
@@ -19,8 +18,8 @@ function closeForm() {
     localStorage.setItem('popupVisible', 'false'); // Save state to localStorage
 }
 
-// On page load, check if the popup should be visible
-window.onload = function () {
+// Check if the popup should be visible when DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
     const popup = document.getElementById('popupForm');
     const popupVisible = localStorage.getItem('popupVisible');
     if (popupVisible === 'true') {
@@ -28,4 +27,4 @@ window.onload = function () {
     } else {
         popup.style.display = 'none'; // Hide the popup by default
     }
-};
+});
