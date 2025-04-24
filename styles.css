@@ -858,8 +858,11 @@ textarea {
         }
 
         .expect-section p {
-            font-size: 20px;
-
+            font-size: 16px;
         }
+
+  .line-break {
+        display: none;
+    }
 
 }
