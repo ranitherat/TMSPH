@@ -688,6 +688,22 @@ textarea {
     font-family: 'Open Sans', sans-serif;
 }
 
+.others-line {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.underline-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 150px;
+    outline: none;
+    border-radius: 0;
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
 /* Checkbox Group */
 .checkbox-group {
     display: grid;
