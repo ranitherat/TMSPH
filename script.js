@@ -28,3 +28,24 @@ document.addEventListener('DOMContentLoaded', function () {
         popup.style.display = 'none'; // Hide the popup by default
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.getElementById('call-time');
+
+    // Set min to now
+    const now = new Date();
+    now.setSeconds(0, 0);
+    const offset = now.getTimezoneOffset();
+    const localISOTime = new Date(now.getTime() - (offset * 60000)).toISOString().slice(0, 16);
+    input.min = localISOTime;
+
+    // Change text color when value is selected
+    input.addEventListener('input', function () {
+        if (input.value) {
+            input.classList.add('has-value');
+        } else {
+            input.classList.remove('has-value');
+        }
+    });
+});
+
