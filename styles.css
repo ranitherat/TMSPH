@@ -826,13 +826,13 @@ textarea {
 
     .hero-content p {
         font-size: 16px; /* or any size you prefer */
-        margin-right: 60px;
+        margin-right: 40px;
         margin-left: -40px;
     }
 
     .hero-content h1 {
         font-size: 30px; /* or any size you prefer */
-        margin-right: 60px;
+        margin-right: 40px;
         margin-left: -40px;
     }
 
