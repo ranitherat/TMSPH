@@ -821,10 +821,30 @@ textarea {
     color: black;
 }
 
-@media (min-width: 768px) {
 
+@media (max-width: 768px) {
 
-    .footer-content {
+    .hero-content p {
+        font-size: 16px; /* or any size you prefer */
+        margin-right: 60px;
+        margin-left: -40px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px; /* or any size you prefer */
+        margin-right: 60px;
+        margin-left: -40px;
+    }
+
+    .hero-section {
+        padding: 20px 0px;
+    }
+
+    .read-more-btn {
+        margin-left: -40px;
+    }
+
+  .footer-content {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
