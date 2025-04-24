@@ -84,10 +84,11 @@
                                 <input type="checkbox" name="industry" value="Non-profit and NGO">
                                 Non-profit and NGO
                             </label>
-                            <label>
-                                <input type="checkbox" name="industry" value="Others (please specify)">
-                                Others (please specify)
-                            </label>
+                            <div class="others-line">
+                                <input type="checkbox" name="industry" value="Others">
+                                <label for="other" style="margin-left: 10px;">Other:</label>
+                                <input type="text" name="other" id="other" class="underline-input">
+                            </div>
                         </div>
 
                         <input type="text" name="Other" placeholder="Others (please specify)">
