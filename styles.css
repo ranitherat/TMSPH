@@ -674,6 +674,15 @@ input, textarea {
     box-sizing: border-box; 
 }
 
+input[type="datetime-local"] {
+        font-family: 'Open Sans', sans-serif;
+        color: gray; /* Initial color */
+    }
+
+        input[type="datetime-local"].has-value {
+            color: black; /* Color after selection */
+        }
+
 textarea {
     resize: vertical;
     font-family: 'Open Sans', sans-serif;
