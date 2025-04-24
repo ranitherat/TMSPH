@@ -865,4 +865,18 @@ textarea {
         display: none;
     }
 
+  .card-container {
+        flex-direction: column;
+        overflow-x: unset;
+        margin-left: 80px;
+        gap: 20px;
+        padding: 0 20px 80px 20px; /* adds some side padding */
+        margin-top: 0px;
+    }
+
+    .card {
+        width: 85%;
+        min-width: unset;
+    }
+
 }
