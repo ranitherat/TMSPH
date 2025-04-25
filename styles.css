@@ -879,4 +879,30 @@ textarea {
         min-width: unset;
     }
 
+    
+    .about-content h1 {
+        font-size: 45px; /* or any size you prefer */
+        margin-right: 60px;
+        margin-left: -40px;
+    }
+
+    .about-content p {
+        font-size: 20px; /* or any size you prefer */
+        margin-right: 60px;
+        margin-left: -40px;
+    }
+
+    .about-section {
+        padding: 20px 0px;
+    }
+
+    .connect-about {
+        margin-top: 170px;
+    }
+
+        .connect-about h3 {
+            font-size: 18px; /* or any size you prefer */
+        }
+
+
 }
