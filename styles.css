@@ -986,6 +986,19 @@ textarea {
         margin-left: -60px;
     }
 
+      .services-section1 h1 {
+        margin-top: -10px;
+        font-size: 40px; /* or any size you prefer */
+        margin-right: 60px;
+        margin-left: -50px;
+    }
+
+    .services-section1 p {
+        font-size: 20px; /* or any size you prefer */
+        margin-right: 60px;
+        margin-left: -50px;
+    }
+
     .about-section {
         padding: 20px 0px;
     }
