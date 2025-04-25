@@ -884,13 +884,13 @@ textarea {
         margin-top: -10px;
         font-size: 40px; /* or any size you prefer */
         margin-right: 60px;
-        margin-left: -45px;
+        margin-left: -60px;
     }
 
     .about-content p {
         font-size: 20px; /* or any size you prefer */
         margin-right: 60px;
-        margin-left: -45px;
+        margin-left: -60px;
     }
 
     .about-section {
