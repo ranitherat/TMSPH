@@ -927,6 +927,7 @@ textarea {
         .about-company-section p {
             padding: 0px 80px;
             font-size: 18px;
+            margin-left: -5px;
         }
 
 }
