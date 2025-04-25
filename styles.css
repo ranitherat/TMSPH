@@ -1044,7 +1044,7 @@ textarea {
         }
 
   .services-container {
-        padding: 20px;
+        padding: 50px;
     }
 
     .service-item {
@@ -1062,7 +1062,7 @@ textarea {
     .service-description {
         font-size: 0.9rem;
         text-align: left;
-        max-width: 100%;
+        max-width: 80%;
         margin-top: 15px;
         margin-left: 20px;
     }
