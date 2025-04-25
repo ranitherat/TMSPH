@@ -932,4 +932,8 @@ textarea {
         .founder-image {
           margin-left: 0px;
         }
+
+        .custom-button {
+            margin-top: -40px;
+        }
 }
