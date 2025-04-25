@@ -904,6 +904,19 @@ textarea {
         .connect-about h3 {
             font-size: 18px; /* or any size you prefer */
         }
+  
+    .about-company-section {
+        background: #fff;
+        color: #000;
+        padding: 0px 0px;
+        text-align: left;
+        min-height: 2500px;
+    }
 
+        .about-company-section h1 {
+            padding: 60px 60px;
+            font-weight: normal;
+            font-size: 20px;
+        }
 
 }
