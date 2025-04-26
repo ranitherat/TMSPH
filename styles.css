@@ -1141,5 +1141,8 @@ textarea {
     .profile-info {
         text-align: left; /* or center, depending on your style */
     }
-  
+
+    .back-arrow {
+        top: 120px;
+    }
 }
