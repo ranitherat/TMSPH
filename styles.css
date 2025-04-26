@@ -1160,4 +1160,57 @@ textarea {
     .back-arrow {
         top: 120px;
     }
+
+    .footer {
+            padding: 40px 20px 30px;
+            font-size: 16px; /* Slightly smaller for mobile */
+            text-align: center; /* Center text */
+        }
+
+        .footer-content {
+            flex-direction: column;
+            align-items: center; /* Center items */
+            margin-bottom: 30px;
+        }
+
+        .connect,
+        .register {
+            flex: 1 1 100%;
+            margin-left: 0;
+            margin-bottom: 5px;
+            text-align: center; /* Center text in both sections */
+        }
+
+            .connect h3,
+            .register h3 {
+                font-size: 18px;
+            }
+
+        .icons {
+            display: flex;
+            justify-content: center; /* Center icons */
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+            .icons img {
+                width: 35px;
+                height: 35px;
+            }
+
+        .footer-bottom {
+            font-size: 14px;
+            margin-top: 0px;
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center; /* Center links */
+            justify-content: center;
+            gap: 10px;
+        }
+
+            .footer-links a {
+                margin: 5px 0;
+            }
 }
