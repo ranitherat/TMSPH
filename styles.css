@@ -942,7 +942,7 @@ textarea {
         color: #000;
         padding: 10px 0px;
         text-align: left;
-        min-height: 1800px;
+        min-height: 1750px;
         margin-left: -40px;
     }
 
@@ -964,8 +964,7 @@ textarea {
         margin-left: 80px;
         gap: 20px;
         padding: 0 20px 80px 20px; /* adds some side padding */
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 10px;
     }
 
     .card {
