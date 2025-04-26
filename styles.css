@@ -1019,6 +1019,10 @@ textarea {
         margin-right: -20px;
     }
 
+    .services-section {
+        min-height: 850px; 
+    }
+  
     .sensei-section {
         padding: 20px 0px;
         margin-right: -20px;
