@@ -1145,7 +1145,7 @@ textarea {
 
      .form-popup p {
         margin-right: -15px;
-        margin-left: 5px;
+        margin-left: 0px;
         font-size: 14px; /* Slightly smaller for mobile */
     }
   
