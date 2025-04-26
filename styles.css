@@ -1216,4 +1216,8 @@ textarea {
             .footer-links a {
                 margin: 5px 0;
             }
+       
+        .learn-more-button {
+        margin-top: -20px;
+        }
 }
