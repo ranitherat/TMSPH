@@ -32,14 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById('call-time');
 
-    // Set min to now
-    const now = new Date();
-    now.setSeconds(0, 0);
-    const offset = now.getTimezoneOffset();
-    const localISOTime = new Date(now.getTime() - (offset * 60000)).toISOString().slice(0, 16);
-    input.min = localISOTime;
+    const pad = (num) => String(num).padStart(2, '0');
 
-    // Change text color when value is selected
+    const now = new Date();
+    now.setSeconds(0, 0); // Clear seconds and milliseconds
+
+    const year = now.getFullYear();
+    const month = pad(now.getMonth() + 1);
+    const day = pad(now.getDate());
+    const hours = pad(now.getHours());
+    const minutes = pad(now.getMinutes());
+
+    const localDateTime = `${year}-${month}-${day}T${hours}:${minutes}`;
+    input.min = localDateTime;
+
     input.addEventListener('input', function () {
         if (input.value) {
             input.classList.add('has-value');
@@ -48,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
 function goBack() {
     const referrer = document.referrer;
