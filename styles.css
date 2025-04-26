@@ -1092,7 +1092,8 @@ textarea {
     }
 
     .sensei-expect-section {
-        margin-left: -40px;
+        margin-left: -60px;
+        padding: 20px 0px;
     }
   
      .sensei-expect-section h1 {
@@ -1101,7 +1102,6 @@ textarea {
   
     .sensei-expect-section p {
         font-size: 20px;
-        padding: 0;
     }
   
 }
