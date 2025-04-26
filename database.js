@@ -15,7 +15,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
     console.log("Prepared data:", data); // Check if it's properly formatted
 
     // ✅ 1. Send to Google Sheets
-    fetch("https://script.google.com/macros/s/AKfycbxCDcZQW425fLuQJMV_iIGnIqHLnsMA7f2ba87st32Y-P237Ght_L4Z6BLfNowbozj2ww/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbwGwYVpkREHscFo99wpVe0eDq-zk0lL79p0VgMPliQY_T08V4XOB9wqpouNVKvLMytR0Q/exec", {
         method: "POST",
         mode: "no-cors",
         headers: {
