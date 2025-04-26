@@ -1127,5 +1127,9 @@ textarea {
         grid-template-columns: 1fr; /* 1 per row on mobile */
         gap: 10px; /* even shorter gap for small screens */
     }
+
+     .form-popup p {
+        margin-right: -20px;
+    }
   
 }
