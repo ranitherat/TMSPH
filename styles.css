@@ -1101,6 +1101,7 @@ textarea {
   
     .sensei-expect-section p {
         font-size: 20px;
+        padding: 0;
     }
   
 }
