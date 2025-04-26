@@ -595,7 +595,7 @@ html {
 
 .register a {
     color: #fff;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .register p {
