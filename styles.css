@@ -1005,6 +1005,12 @@ textarea {
         margin-right: -20px;
     }
 
+    .sensei-section {
+        padding: 20px 0px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
     .about-section {
         padding: 20px 0px;
     }
