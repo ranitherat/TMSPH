@@ -1090,4 +1090,17 @@ textarea {
         background-size: contain;
         padding: 20px 0;
     }
+
+    .sensei-expect-section {
+        margin-left: -40px;
+    }
+  
+     .sensei-expect-section h1 {
+        font-size: 30px;
+    }
+  
+    .sensei-expect-section p {
+        font-size: 20px;
+    }
+  
 }
