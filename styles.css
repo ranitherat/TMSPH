@@ -1001,6 +1001,7 @@ textarea {
 
     .services-section1 {
         padding: 20px 0px;
+        margin-left: -20px;
     }
 
     .about-section {
