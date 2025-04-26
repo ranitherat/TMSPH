@@ -1114,7 +1114,7 @@ textarea {
         flex-direction: column;
         align-items: center;
         gap: 40px;
-        margin-left: -20px;
+        margin-left: -10px;
     }
 
     .svg img {
