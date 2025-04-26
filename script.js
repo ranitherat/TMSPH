@@ -49,3 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function goBack() {
+    const referrer = document.referrer;
+    if (referrer.includes('homepage.html')) {
+        window.location.href = 'homepage.html';
+    } else {
+        history.back();
+    }
+}
