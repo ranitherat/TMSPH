@@ -5,17 +5,14 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    // Log the form data to check it
-    console.log(data);
-
     // For checkboxes with same name (industry)
     const industries = [...form.querySelectorAll('input[name="industry"]:checked')].map(i => i.value);
     data.industry = industries.length > 0 ? industries.join(', ') : 'None';
 
     console.log("Prepared data:", data); // Check if it's properly formatted
 
-    // ✅ 1. Send to Google Sheets
-    fetch("https://script.google.com/macros/s/AKfycbwGwYVpkREHscFo99wpVe0eDq-zk0lL79p0VgMPliQY_T08V4XOB9wqpouNVKvLMytR0Q/exec", {
+    // ✅ Send to Google Sheets
+    fetch("https://script.google.com/macros/s/AKfycbxKDtpbagD4gs6Y4HJGpst8OqeK5jF-y8I1acds5pblP3Eb81vSMikUFZKUg495jFwRjg/exec", {
         method: "POST",
         mode: "no-cors",
         headers: {
@@ -24,28 +21,14 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
         body: JSON.stringify(data),
     }).then(() => {
         console.log("✅ Sent to Google Sheets");
+
+        // ✅ Clear the form
+        form.reset();
+
+        // ✅ Show success message (optional)
+        alert("Form submitted successfully!");
     }).catch((error) => {
         console.error("❌ Error sending to Google Sheets:", error);
-    });
-
-    // ✅ 2. Send to Web3Forms
-    fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            access_key: "12604b24-fa0d-48dd-bc9b-0bf912db2a78", //change to your access-key
-            ...data
-        }),
-    }).then(response => {
-        if (response.ok) {
-            alert("Form submitted successfully!");
-            form.reset();
-        } else {
-            alert("Failed to submit form via Web3Forms");
-        }
-    }).catch(error => {
-        console.error("❌ Web3Forms Error:", error);
+        alert("There was an error submitting the form. Please try again.");
     });
 });
