@@ -35,7 +35,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            access_key: "12604b24-fa0d-48dd-bc9b-0bf912db2a78",
+            access_key: "12604b24-fa0d-48dd-bc9b-0bf912db2a78", //change to your access-key
             ...data
         }),
     }).then(response => {
